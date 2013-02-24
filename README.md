@@ -1,10 +1,10 @@
-# angular-brunch-seed
+# angular-brunch-seed-javascript
 ### A starter project for AngularJS using Brunch.io
 
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Coffeescript / Jade / Less / SASS / SCSS / Stylus automatically compiled on save
+* Javascript / Jade / Less / SASS / SCSS / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
 * [testacular](https://github.com/vojtajina/testacular) integration for
@@ -13,19 +13,20 @@ Features:
 
 ## Alternate Versions
 
+- [Coffeescript] (https://github.com/scotch/angular-brunch-seed) by [@scotch] I start from this for create current configuration
 - [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [@clkao](https://github.com/clkao) - Uses [Livescript](http://livescript.net/) instead of [Coffeescript](http://coffeescript.org/)
 - [True North](https://github.com/scoarescoare/angular-brunch-true-north) by [@scoarescoare](https://github.com/scoarescoare) - Uses [SASS](http://sass-lang.com/) instead of [LESS](http://lesscss.org/)
 - [Bower Support](https://github.com/GulinSS/angular-brunch-seed) by [@GulinSS](https://github.com/GulinSS) - Uses [Bower](https://github.com/twitter/bower) for package management
 
 ## How to use angular-brunch-seed
 
-* `git clone https://github.com/scotch/angular-brunch-seed.git` to clone the **angular-brunch-seed** repository
+* `git clone https://github.com/Nss/angular-brunch-seed-javascript.git` to clone the **angular-brunch-seed** repository
 * `cd angular-brunch-seed`
 * `./scripts/init.sh` to install node packages
 
 or if you have **Brunch** installed run:
 
-`brunch new myapp --skeleton https://github.com/scotch/angular-brunch-seed`
+`brunch new myapp --skeleton https://github.com/Nss/angular-brunch-seed-javascript`
 
 
 ### Using Jade

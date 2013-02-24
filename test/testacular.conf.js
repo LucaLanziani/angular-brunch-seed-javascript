@@ -6,29 +6,35 @@ basePath = '../';
 
 // list of files / patterns to load in the browser
 files = [
-  JASMINE,
-  JASMINE_ADAPTER,
+  JASMINE
+  , JASMINE_ADAPTER
 
-  // Application Code //
-  'vendor/scripts/angular/angular.js',
-  'vendor/scripts/angular/angular-*.js',
+  , 'vendor/scripts/angular/angular.js'
+  , 'vendor/scripts/angular/angular-*.js'
 
-  //'vendor/scripts/**/*.js',
-  'vendor/scripts/**/*.coffee',
-  //'app/scripts/**/*.js',
-  'app/scripts/**/*.coffee',
+  , 'vendor/scripts/console-helper.js'
+  , 'vendor/scripts/jquery-1.8.3.js'
+  , 'vendor/scripts/bootstrap/bootstrap-transition.js'
+  , 'vendor/scripts/bootstrap/bootstrap-alert.js'
+  , 'vendor/scripts/bootstrap/bootstrap-button.js'
+  , 'vendor/scripts/bootstrap/bootstrap-carousel.js'
+  , 'vendor/scripts/bootstrap/bootstrap-collapse.js'
+  , 'vendor/scripts/bootstrap/bootstrap-dropdown.js'
+  , 'vendor/scripts/bootstrap/bootstrap-modal.js'
+  , 'vendor/scripts/bootstrap/bootstrap-tooltip.js'
+  , 'vendor/scripts/bootstrap/bootstrap-popover.js'
+  , 'vendor/scripts/bootstrap/bootstrap-scrollspy.js'
+  , 'vendor/scripts/bootstrap/bootstrap-tab.js'
+  , 'vendor/scripts/bootstrap/bootstrap-typeahead.js'
+  , 'vendor/scripts/bootstrap/bootstrap-affix.js'
+  
+  , 'test/vendor/angular/angular-mocks.js'
+  
+  //Application Code
+  , 'app/scripts/**/*.js'
 
-  // Javascript //
- 
-  'test/vendor/angular/angular-mocks.js',
-
-  // Specs //
-
-  // CoffeeScript //
-  'test/unit/**/*.spec.coffee'
-
-  // Javascript //
-  // 'test/unit/**/*.spec.js'
+  //Specs
+  , 'test/unit/**/*Spec.js'
 ];
 
 // list of files to exclude
@@ -89,6 +95,6 @@ singleRun = false;
 reportSlowerThan = 500;
 
 // compile coffee scripts
-preprocessors = {
-  '**/*.coffee': 'coffee'
-};
+// preprocessors = {
+//   '**/*.coffee': 'coffee'
+// };
