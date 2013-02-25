@@ -13,7 +13,7 @@ Features:
 
 ## Alternate Versions
 
-- [Coffeescript] (https://github.com/scotch/angular-brunch-seed) by [@scotch] I start from this for create current configuration - Uses [Coffeescript](http://coffeescript.org/) instead of Javascript and [Jade](http://jade-lang.com/) instead of HTML
+- [Coffeescript] (https://github.com/scotch/angular-brunch-seed) by [@scotch](https://github.com/scotch) - Uses [Coffeescript](http://coffeescript.org/) instead of Javascript and [Jade](http://jade-lang.com/) instead of HTML
 - [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [@clkao](https://github.com/clkao) - Uses [Livescript](http://livescript.net/) instead of [Coffeescript](http://coffeescript.org/)
 - [True North](https://github.com/scoarescoare/angular-brunch-true-north) by [@scoarescoare](https://github.com/scoarescoare) - Uses [SASS](http://sass-lang.com/) instead of [LESS](http://lesscss.org/)
 - [Bower Support](https://github.com/GulinSS/angular-brunch-seed) by [@GulinSS](https://github.com/GulinSS) - Uses [Bower](https://github.com/twitter/bower) for package management
