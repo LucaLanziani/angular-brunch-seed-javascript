@@ -1,19 +1,19 @@
 {
-  "author": "Kyle Finley <kyle.finley@gmail.com>",
-  "name": "sapling-seed",
+  "author": "Luca Lanziani <luca.lanziani@gmail.com>",
+  "name": "angular-brunch-seed-javascritp,
   "description": "AngularJS + Brunch",
-  "version": "0.1.0",
-  "homepage": "https://github.com/scotch/angular-brunch-seed",
+  "version": "0.1.1",
+  "homepage": "https://github.com/Nss/angular-brunch-seed-javascript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/scotch/angular-brunch-seed"
+    "url": "https://github.com/Nss/angular-brunch-seed-javascript"
   },
   "engines": {
     "node": "~0.6.10 || 0.8 || 0.9"
   },
   "scripts": {
     "start": "node_modules/.bin/brunch watch --server",
-    "test": "node_modules/.bin/testacular start test/testacular.conf.js"
+    "test": "testacular start test/testacular.conf.js"
   },
   "dependencies": {
     "brunch": ">= 1.4 < 1.5",

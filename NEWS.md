@@ -1,8 +1,15 @@
 ###### Notice ######
 
-*This file documents the changes in **angular-brunch-seed** versions that are listed below.*
+*This file documents the changes in **angular-brunch-seed-javascript** versions that are listed below.*
 
 * * *
+
+### 0.0.7 ###
+
+2013-02-25
+
++ updated AngularJS to 1.0.5
++ updated Bootstrap to 2.3.0
 
 ### 0.0.6 ###
 

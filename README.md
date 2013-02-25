@@ -4,7 +4,7 @@
 [AngularJS](http://angularjs.org) + [Brunch](http://brunch.io)
 
 Features:
-* Javascript / Jade / Less / SASS / SCSS / Stylus automatically compiled on save
+* Javascript / Jade ready / Less / SASS / SCSS / Stylus automatically compiled on save
 * auto-reload during development saves you from manually refreshing the page
 * Javascript / CSS minification for production
 * [testacular](https://github.com/vojtajina/testacular) integration for
@@ -13,15 +13,15 @@ Features:
 
 ## Alternate Versions
 
-- [Coffeescript] (https://github.com/scotch/angular-brunch-seed) by [@scotch] I start from this for create current configuration
+- [Coffeescript] (https://github.com/scotch/angular-brunch-seed) by [@scotch] I start from this for create current configuration - Uses [Coffeescript](http://coffeescript.org/) instead of Javascript and [Jade](http://jade-lang.com/) instead of HTML
 - [Livescript](https://github.com/clkao/angular-brunch-seed-livescript) by [@clkao](https://github.com/clkao) - Uses [Livescript](http://livescript.net/) instead of [Coffeescript](http://coffeescript.org/)
 - [True North](https://github.com/scoarescoare/angular-brunch-true-north) by [@scoarescoare](https://github.com/scoarescoare) - Uses [SASS](http://sass-lang.com/) instead of [LESS](http://lesscss.org/)
 - [Bower Support](https://github.com/GulinSS/angular-brunch-seed) by [@GulinSS](https://github.com/GulinSS) - Uses [Bower](https://github.com/twitter/bower) for package management
 
 ## How to use angular-brunch-seed
 
-* `git clone https://github.com/Nss/angular-brunch-seed-javascript.git` to clone the **angular-brunch-seed** repository
-* `cd angular-brunch-seed`
+* `git clone https://github.com/Nss/angular-brunch-seed-javascript.git` to clone the **angular-brunch-seed-javascript** repository
+* `cd angular-brunch-seed-javascript`
 * `./scripts/init.sh` to install node packages
 
 or if you have **Brunch** installed run:
@@ -29,22 +29,20 @@ or if you have **Brunch** installed run:
 `brunch new myapp --skeleton https://github.com/Nss/angular-brunch-seed-javascript`
 
 
-### Using Jade
-
-You will find the jade files in the `app` and `app/partials` directories. Upon save the Jade files will be compiled to HTML
-and placed in the `app/assets` folder. Do not modify the files in the `app/assets` folder as they will be overriden with subsequent
-changes to their `*.jade` counter part.
-
 ### Using html
 
-By default angular-brunch-seed uses jade templates. If you would prefer to use HTML run the command:
+By default angular-brunch-seed-javascript uses html templates. If you would translate your jade file to HTML run the command:
 
 ```
 ./scripts/compile-html.sh
 ```
-All Jade file will be compiled to HTML and be placed in the `app/assets` directory. Addtionally, the `*.jade`
-files will be removed from the project. Any changes that you make to the `app/assets/**/*.html` files will now appear in the
-browser.
+All Jade file will be compiled to HTML and be placed in the `app/assets` directory. Addtionally, the `*.jade` files will be removed from the project. Any changes that you make to the `app/assets/**/*.html` files will now appear in the browser.
+
+
+### Using Jade
+
+You could put the jade files in the `app` and `app/partials` directories. Upon save the Jade files will be compiled to HTML and placed in the `app/assets` folder. Do not modify the files in the `app/assets` folder as they will be overriden with subsequent changes to their `*.jade` counter part.
+
 
 ### Running the app during development
 
@@ -114,10 +112,6 @@ fetch the changes and merge them into your project with git.
           partial2.html
         index.html            --> app layout file (the main html template file of the app).
 
-      partials/               --> Jade partial files. This file will be converted to HTML upon save.
-        nav.jade              If you are using HTML this directory will not be present. You will find the template file
-        partial1.jade         in the `app/assets/partials` directory instead.
-        partial2.jade         If you are using Jade these file will be converted to HTML and copied to `app/assets/partials` upon save.
       scripts/                --> base directory for app scripts
         controllers.js        --> application controllers
         directives.js         --> custom angular directives
@@ -132,9 +126,7 @@ fetch the changes and merge them into your project with git.
             _override.less    --> styles that should beloaded after bootstrap.
             _variables.less   --> bootstrap variables to be used during the compilation process
         app.less              --> a file for importing styles.
-      app.coffee              --> application definition and routes.
-      index.jade              --> Index file. This will be converted to assets/index.html on save
-      init.coffee             --> application bootstrap
+      app.js                  --> application definition and routes.
 
     node_modules              --> NodeJS modules
 
@@ -148,8 +140,9 @@ fetch the changes and merge them into your project with git.
       test.sh                 --> runs all unit tests
 
     test/                     --> test source files and libraries
-      e2e/                    -->
-        scenarios.coffee      --> end-to-end specs
+      e2e/
+        app/                   
+          scenarios.js        --> end-to-end specs
       unit/
         controllers.spec.js   --> specs for controllers
         directives.spec.js    --> specs for directives
@@ -184,6 +177,6 @@ fetch the changes and merge them into your project with git.
 
 ## Contributers
 
-[Complete list of code contributers](https://github.com/scotch/angular-brunch-seed/graphs/contributors)
+[Complete list of code contributers](https://github.com/Nss/angular-brunch-seed-javascript/graphs/contributors)
 
 For more information on angular please check out <http://angularjs.org>

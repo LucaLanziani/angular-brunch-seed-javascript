@@ -94,7 +94,4 @@ singleRun = false;
 // CLI --report-slower-than 500
 reportSlowerThan = 500;
 
-// compile coffee scripts
-// preprocessors = {
-//   '**/*.coffee': 'coffee'
-// };
+
