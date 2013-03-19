@@ -2,7 +2,7 @@
   "files": [
     {
       "from": "template.js.hbs",
-      "to": "app/scripts/services/{{name}}.js"
+      "to": "app/scripts/services/{{#camelize}}{{name}}{{/camelize}}.js"
     }
   ],
   "dependencies": []
