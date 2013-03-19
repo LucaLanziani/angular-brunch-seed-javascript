@@ -1,0 +1,19 @@
+(function (){
+  "use strinct";
+
+  var MODULE_NAME = "{{#camelize}}{{name}}Service{{/camelize}}";
+  var SERVICE_NAME = "{{name}}";
+
+  angular
+  .module(MODULE_NAME, [])
+  .factory(SERVICE_NAME, function() {
+    return {
+      module_name: function () {
+        return MODULE_NAME;
+      },
+      service_name: SERVICE_NAME
+    };
+  });
+
+})();
+
