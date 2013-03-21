@@ -1,8 +1,9 @@
 (function (){
   "use strinct";
 
-  var MODULE_NAME = "{{#camelize}}{{name}}Service{{/camelize}}";
-  var SERVICE_NAME = "{{name}}";
+  // You should add {{#camelize}}{{name}}Service{{/camelize}} to the module dependencies to get the service {{name}} visible
+  var MODULE_NAME = "{{#camelize}}{{name}}Service{{/camelize}}",
+      SERVICE_NAME = "{{name}}";
 
   angular
   .module(MODULE_NAME, [])

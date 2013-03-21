@@ -1,7 +1,8 @@
 (function () {
   'use strict';
 
-  var CONTROLLER_NAME = "{{#camelize}}{{name}}Ctrl{{/camelize}}";
+  var CONTROLLER_NAME = "{{#camelize}}{{name}}Ctrl{{/camelize}}",
+      MODULE = "myApp";
 
   function controller($scope) {
     
@@ -16,8 +17,8 @@
   controller.$inject = ['$scope'];
 
   angular
-  .module("myApp")
-  .controller(CONTROLLER_NAME, controller);
+  .module(MODULE) //retrieves the module
+  .controller(CONTROLLER_NAME, controller); //register the controller by name, avoiding minification problems
 
 })();
 
