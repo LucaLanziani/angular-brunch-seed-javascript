@@ -174,6 +174,13 @@ fetch the changes and merge them into your project with git.
           sapling             --> supplemental theme
             _overrides.less
             _variables.less
+    generators/
+      controller/
+        generator.json        --> controller generator parameters
+        template.js.hbs       --> controller template
+      service/
+        generator.json        --> service generator parameters
+        service.js.hbs        --> service template
 
 ## Contributers
 
