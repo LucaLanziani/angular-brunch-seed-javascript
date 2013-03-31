@@ -1,0 +1,24 @@
+(function () {
+  'use strict';
+
+  var CONTROLLER_NAME = "{{#camelize}}{{name}}Ctrl{{/camelize}}",
+      MODULE = "myApp";
+
+  function controller($scope) {
+    
+    var config = {
+      name: CONTROLLER_NAME
+    };
+
+    $scope.{{name}} = config;
+
+  }
+
+  controller.$inject = ['$scope'];
+
+  angular
+  .module(MODULE) //retrieves the module
+  .controller(CONTROLLER_NAME, controller); //register the controller by name, avoiding minification problems
+
+})();
+
